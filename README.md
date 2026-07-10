@@ -10,6 +10,6 @@ nextflow run fasta-cluster \
   --samplesheet [samplesheet.csv] \
   --min_similarity '80.0' \
   --outdir "cluster-results" \
-  --segments "HA NA PB2 PB1 PA NP MP NS"
+  --segments "WGS" \
   -profile stjude
 ```
