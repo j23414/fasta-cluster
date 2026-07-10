@@ -10,6 +10,26 @@
             "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
             "installed_by": ["modules"]
           },
+          "fastani": {
+            "branch": "master",
+            "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
+            "installed_by": ["modules"]
+          },
+          "mash/dist": {
+            "branch": "master",
+            "git_sha": "da0102c4a5acf25c96d3cdaac35f1ea2bfabbdd9",
+            "installed_by": ["modules"]
+          },
+          "mash/screen": {
+            "branch": "master",
+            "git_sha": "da0102c4a5acf25c96d3cdaac35f1ea2bfabbdd9",
+            "installed_by": ["modules"]
+          },
+          "mash/sketch": {
+            "branch": "master",
+            "git_sha": "da0102c4a5acf25c96d3cdaac35f1ea2bfabbdd9",
+            "installed_by": ["modules"]
+          },
           "mmseqs/cluster": {
             "branch": "master",
             "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
@@ -18,6 +38,31 @@
           "mmseqs/easycluster": {
             "branch": "master",
             "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
+            "installed_by": ["modules"]
+          },
+          "seqkit/grep": {
+            "branch": "master",
+            "git_sha": "d07a945f421a4a91ce4e5a22db63e0e7f8741607",
+            "installed_by": ["modules"]
+          },
+          "seqkit/seq": {
+            "branch": "master",
+            "git_sha": "d07a945f421a4a91ce4e5a22db63e0e7f8741607",
+            "installed_by": ["modules"]
+          },
+          "vclust/align": {
+            "branch": "master",
+            "git_sha": "b7a574aba8f9094bff0ca8153c9894574af1224a",
+            "installed_by": ["modules"]
+          },
+          "vclust/cluster": {
+            "branch": "master",
+            "git_sha": "b7a574aba8f9094bff0ca8153c9894574af1224a",
+            "installed_by": ["modules"]
+          },
+          "vclust/prefilter": {
+            "branch": "master",
+            "git_sha": "b7a574aba8f9094bff0ca8153c9894574af1224a",
             "installed_by": ["modules"]
           }
         }
