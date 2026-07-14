@@ -1,0 +1,35 @@
+name: mash_triangle
+
+description: |
+  Compute a lower-triangular Mash distance matrix from a Mash sketch.
+
+keywords:
+  - mash
+  - sketch
+  - distance
+  - clustering
+  - genomes
+
+tools:
+  - mash:
+      description: Fast genome and metagenome distance estimation using MinHash.
+      homepage: https://mash.readthedocs.io/
+      documentation: https://mash.readthedocs.io/
+      licence: ["BSD-3-Clause"]
+
+input:
+  - meta:
+      type: map
+      description: Sample metadata
+
+  - sketch:
+      type: file
+      description: Mash sketch (.msh)
+
+output:
+  - triangle:
+      type: file
+      description: Lower triangular Mash distance matrix
+
+authors:
+  - Jennifer Chang

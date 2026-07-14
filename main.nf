@@ -1,5 +1,6 @@
 include { MASH_SKETCH } from './modules/nf-core/mash/sketch/main'
 include { MASH_DIST } from './modules/nf-core/mash/dist/main'
+include { MASH_TRIANGLE } from './modules/local/mash/triangle/main'
 
 workflow {
     reads_ch = channel.fromPath(params.fasta, checkIfExists: true)
@@ -8,10 +9,13 @@ workflow {
     MASH_SKETCH(
         reads_ch
     )
+
     MASH_DIST(
         MASH_SKETCH.out.mash,
-        MASH_SKETCH.out.mash.map { n -> n.get(1) }
+        MASH_SKETCH.out.mash.map {n -> n.get(1)}
     )
 
-    MASH_DIST.out.dist | view
+    MASH_TRIANGLE(
+        MASH_SKETCH.out.mash,
+    )
 }
