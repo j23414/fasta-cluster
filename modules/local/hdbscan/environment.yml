@@ -1,0 +1,13 @@
+name: hdbscan-env
+
+channels:
+  - conda-forge
+
+dependencies:
+  - python=3.11
+  - hdbscan=0.8.40
+  - numpy
+  - scipy
+  - scikit-learn
+  - pandas
+  

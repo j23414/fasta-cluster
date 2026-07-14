@@ -4,6 +4,7 @@ include { MASH_TRIANGLE } from './modules/local/mash/triangle/main'
 include { CLUSTY } from './modules/nf-core/clusty/main'
 
 process HDBSCAN {
+    conda "${projectDir}/modules/local/hdbscan/environment.yml"
     input:
     path (triangle_dist)
 
