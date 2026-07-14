@@ -8,8 +8,8 @@ process MASH_DIST {
         'quay.io/biocontainers/mash:2.3--he348c14_1' }"
 
     input:
-    tuple val(meta), path(query)
-    path reference
+    tuple val(meta), path(query, stageAs: "query/*")
+    path reference, stageAs: "reference/*"
 
     output:
     tuple val(meta), path("*.txt"), emit: dist
