@@ -10,6 +10,11 @@
             "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
             "installed_by": ["modules"]
           },
+          "clusty": {
+            "branch": "master",
+            "git_sha": "5909fc046b4b2062e4b4173808aacd2424e0866a",
+            "installed_by": ["modules"]
+          },
           "fastani": {
             "branch": "master",
             "git_sha": "6d46786420b4d7bc88eba026eb389c0c5535d120",
