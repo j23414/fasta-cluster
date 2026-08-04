@@ -40,6 +40,7 @@ df <- reduce(
 )
 
 cluster_cols <- setdiff(names(df), id_col)
+method_levels <- tools::file_path_sans_ext(basename(files))
 
 plot_df <-
   df %>%
@@ -47,6 +48,9 @@ plot_df <-
     cols = all_of(cluster_cols),
     names_to = "method",
     values_to = "cluster"
+  ) %>%
+  mutate(
+    method = factor(method, levels = method_levels)
   )
 
 # ====== Plot alluvial
